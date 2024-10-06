@@ -9,9 +9,13 @@ Hardware connections:
 
 MAX485:
 RO (Receiver Output) ➔ RX-Pin des ESP32 (z. B. GPIO16).
+
 DI (Driver Input) ➔ TX-Pin des ESP32 (z. B. GPIO17).
+
 DE (Driver Enable) und RE (Receiver Enable) zusammen ➔ GPIO4 des ESP32.
-Hinweis: Durch Ansteuern von DE und RE können wir zwischen Senden und Empfangen wechseln. Für das Mithören setzen wir beide auf LOW (Empfangsmodus).
+
+Note: We can switch between transmitting and receiving by activating DE and RE. For monitoring, we set both to LOW (receive mode).
+
 VCC ➔ 3.3V des ESP32.
 GND ➔ GND des ESP32.
 
